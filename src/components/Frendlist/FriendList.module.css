@@ -1,45 +1,45 @@
 .friendList {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .item {
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    border-radius: 3px;
-    background-color: rgba(241, 239, 239, 0.776);
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
-    width: 400px;
-    height: 100px;
-    padding: 20px;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  border-radius: 3px;
+  background-color: rgba(241, 239, 239, 0.776);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .status,
 .avatar {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .status {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
 }
 
 .isOnline {
-    background: greenyellow;
+  background: greenyellow;
 }
 
 .isOffline {
-    background: rgb(240, 95, 143);
+  background: rgb(240, 95, 143);
 }
 
 .avatar {
-    border-radius: 10px;
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
 }

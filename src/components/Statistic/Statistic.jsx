@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import styles from "./Statistic.module.css";
+import PropTypes from 'prop-types';
+import styles from './Statistic.module.css';
 
- const randomColor = () => {
+const randomColor = () => {
   const r = Math.floor(Math.random() * 255 + 1);
   const g = Math.floor(Math.random() * 255 + 1);
   const b = Math.floor(Math.random() * 255 + 1);
@@ -33,19 +33,18 @@ export default function Statistics({ title, stats }) {
   );
 }
 
-
 Statistics.defaultProps = {
-    stats: [],
-    title:"",
+  stats: [],
+  title: '',
 };
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
-    stats: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        label:PropTypes.string.isRequired,
-        percentage:PropTypes.number.isRequired,
-        
-    }))
-  
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
