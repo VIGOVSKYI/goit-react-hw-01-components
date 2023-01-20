@@ -1,26 +1,6 @@
 import PropTypes from "prop-types";
 import styles from "./Statistic.module.css";
 
-// export default function Statistic({ title, stats }) {
-    
-//     const oneItem = stats.map(stat => <li className="item" key = {stat.id}>
-//         <span className="label">{stat.label}</span>
-//         <span className="percentage">{stat.percentage}</span>
-//     </li>);
-
-//     console.log(oneItem);
-
-//     return (<section className="statistics">
-
-//         {title && <h2 className="title">{title}</h2>}
-
-//     <ul className="stat-list">
-//         {oneItem}
-            
-//     </ul>
-//     </section>
-//     );
-// };
  const randomColor = () => {
   const r = Math.floor(Math.random() * 255 + 1);
   const g = Math.floor(Math.random() * 255 + 1);
@@ -55,11 +35,12 @@ export default function Statistics({ title, stats }) {
 
 
 Statistics.defaultProps = {
-    stats: []
+    stats: [],
+    title:"",
 };
 
 Statistics.propTypes = {
-    title: PropTypes.string,
+    title: PropTypes.string.isRequired,
     stats: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired,
         label:PropTypes.string.isRequired,

@@ -8,7 +8,7 @@ export default function Profile({ src, username, tag, location, stats: { followe
         <div className={styles.description}>
           <img src={src} alt="user avatar" className={styles.avatar} />
           <p className={styles.name}>{username}</p>
-          <p className={styles.tag}>{tag}</p>
+          <p className={styles.tag}>@{tag}</p>
           <p className={styles.location}>{location}</p>
         </div>
 
@@ -32,12 +32,12 @@ export default function Profile({ src, username, tag, location, stats: { followe
 
 Profile.propType = {
   name: PropTypes.string.isRequired,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
   }),
 };
